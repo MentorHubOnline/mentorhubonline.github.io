@@ -229,7 +229,23 @@ footer strong{color:var(--blue2);}
   .hero h1{letter-spacing:-1.5px;}
   .cgrid{grid-template-columns:1fr;}
   .tgrid{grid-template-columns:repeat(2,1fr);}
+
 }
+@media(max-width:700px){
+  .nav-links {
+    flex-wrap: nowrap;       /* keep buttons in one row */
+    justify-content: flex-end;
+    gap: 6px;                /* tighter gap */
+  }
+  .nav-links a.nav-cta,
+  .nav-links a.btn-large {
+    padding: 6px 12px;       /* smaller buttons */
+    font-size: 0.75rem;      /* smaller text */
+    white-space: nowrap;      /* prevent wrapping */
+  }
+}
+
+
 </style>
 </head>
 <body>
