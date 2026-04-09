@@ -231,21 +231,26 @@ footer strong{color:var(--blue2);}
   .tgrid{grid-template-columns:repeat(2,1fr);}
 
 }
+
 @media(max-width:700px){
   .nav-links {
-    flex-wrap: nowrap;       /* keep buttons in one row */
+    flex-wrap: nowrap;            /* keep buttons in one row */
     justify-content: flex-end;
-    gap: 6px;                /* tighter gap */
+    gap: 0px;                     /* tighter gap */
+    overflow-x: auto;              /* allow scrolling if needed */
+               /* prevent cutting off */
   }
+
   .nav-links a.nav-cta,
   .nav-links a.btn-large {
-    padding: 6px 12px;       /* smaller buttons */
-    font-size: 0.75rem;      /* smaller text */
-    white-space: nowrap;      /* prevent wrapping */
+    flex-shrink: 1;                /* allow shrinking */
+    min-width: 0;                  /* important for shrink to work */
+    padding: 10px;            /* smaller buttons */
+    font-size: 0.7rem;             /* smaller text */
+    white-space: nowrap;            /* prevent wrapping */
+    text-align: center;
   }
 }
-
-
 </style>
 </head>
 <body>
