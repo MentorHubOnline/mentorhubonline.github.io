@@ -56,7 +56,6 @@
       padding: 90px 0;
     }
 
-    /* PILL TAG */
     .pill {
       display: inline-flex;
       align-items: center;
@@ -79,7 +78,6 @@
       background: var(--blue2);
     }
 
-    /* SECTION HEADER */
     .sec-head {
       text-align: center;
       margin-bottom: 16px;
@@ -95,13 +93,8 @@
       line-height: 1.15;
     }
 
-    h2.sec span {
-      color: var(--blue);
-    }
-
-    h2.sec span.red {
-      color: var(--red);
-    }
+    h2.sec span { color: var(--blue); }
+    h2.sec span.red { color: var(--red); }
 
     p.sec-sub {
       text-align: center;
@@ -117,7 +110,7 @@
       position: sticky;
       top: 0;
       z-index: 200;
-      background: rgba(255, 255, 255, .95);
+      background: rgba(255,255,255,.95);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
       padding: 0 20px;
@@ -140,9 +133,7 @@
       letter-spacing: -.5px;
     }
 
-    .logo span {
-      color: var(--blue);
-    }
+    .logo span { color: var(--blue); }
 
     .logo sub {
       font-size: .55rem;
@@ -185,6 +176,19 @@
       color: #fff !important;
     }
 
+    .btn-large {
+      padding: 16px 36px;
+      font-size: 1rem;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-large:hover {
+      transform: scale(1.05);
+      background: #1D4ED8 !important;
+    }
+
     /* ANNOUNCE */
     .ann {
       background: linear-gradient(90deg, var(--blue3), #EDE9FE, var(--blue3));
@@ -210,15 +214,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .hero-blob {
-      position: absolute;
-      border-radius: 50%;
-      pointer-events: none;
-    }
-
-    .hero .pill {
-      margin-bottom: 24px;
-    }
+    .hero .pill { margin-bottom: 24px; }
 
     .hero h1 {
       font-size: clamp(2.4rem, 6vw, 4.2rem);
@@ -229,13 +225,8 @@
       margin-bottom: 20px;
     }
 
-    .hero h1 .accent {
-      color: var(--blue);
-    }
-
-    .hero h1 .accent2 {
-      color: var(--red);
-    }
+    .hero h1 .accent { color: var(--blue); }
+    .hero h1 .accent2 { color: var(--red); }
 
     .hero p {
       color: var(--muted);
@@ -284,11 +275,8 @@
       transition: .2s;
     }
 
-    .btn-out:hover {
-      background: var(--blue3);
-    }
+    .btn-out:hover { background: var(--blue3); }
 
-    /* Stats */
     .hstats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -298,7 +286,7 @@
       border-radius: 20px;
       overflow: hidden;
       background: #fff;
-      box-shadow: 0 4px 24px rgba(37, 99, 235, .08);
+      box-shadow: 0 4px 24px rgba(37,99,235,.08);
     }
 
     .hstat {
@@ -307,9 +295,7 @@
       border-right: 1px solid var(--border);
     }
 
-    .hstat:last-child {
-      border-right: none;
-    }
+    .hstat:last-child { border-right: none; }
 
     .hstat strong {
       display: block;
@@ -351,8 +337,8 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(234, 88, 12, .12);
-      border: 1px solid rgba(234, 88, 12, .25);
+      background: rgba(234,88,12,.12);
+      border: 1px solid rgba(234,88,12,.25);
       color: #C2410C;
       font-size: 11px;
       font-weight: 700;
@@ -372,11 +358,9 @@
       margin-bottom: 16px;
     }
 
-    .summer h2 span {
-      color: #EA580C;
-    }
+    .summer h2 span { color: #EA580C; }
 
-    .summer>.summer-in>div>p {
+    .summer > .summer-in > div > p {
       color: #92400E;
       font-size: .95rem;
       line-height: 1.8;
@@ -384,18 +368,14 @@
       max-width: 500px;
     }
 
-    .offers {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+    .offers { display: flex; flex-direction: column; gap: 12px; }
 
     .offer {
       display: flex;
       align-items: center;
       gap: 14px;
-      background: rgba(255, 255, 255, .7);
-      border: 1px solid rgba(234, 88, 12, .15);
+      background: rgba(255,255,255,.7);
+      border: 1px solid rgba(234,88,12,.15);
       border-radius: 14px;
       padding: 16px 18px;
     }
@@ -410,52 +390,16 @@
       justify-content: center;
     }
 
-    .offer-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+    .offer-icon svg { width: 20px; height: 20px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .offer-text h4 { font-size: .9rem; font-weight: 700; color: #7C2D12; margin-bottom: 2px; }
+    .offer-text p { font-size: .78rem; color: #92400E; margin: 0; }
+    .offer-badge { margin-left: auto; font-size: 1.3rem; font-weight: 800; color: #EA580C; white-space: nowrap; flex-shrink: 0; }
 
-    .offer-text h4 {
-      font-size: .9rem;
-      font-weight: 700;
-      color: #7C2D12;
-      margin-bottom: 2px;
-    }
-
-    .offer-text p {
-      font-size: .78rem;
-      color: #92400E;
-      margin: 0;
-    }
-
-    .offer-badge {
-      margin-left: auto;
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #EA580C;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    /* Sun illustration */
-    .sun-illo {
-      width: 280px;
-      flex-shrink: 0;
-    }
-
-    .sun-illo svg {
-      width: 100%;
-      height: auto;
-    }
+    .sun-illo { width: 280px; flex-shrink: 0; }
+    .sun-illo svg { width: 100%; height: auto; }
 
     /* ─── WHY ─── */
-    .why {
-      background: #fff;
-    }
+    .why { background: #fff; }
 
     .why-grid {
       display: grid;
@@ -472,11 +416,7 @@
       transition: .3s;
     }
 
-    .why-card:hover {
-      border-color: var(--blue2);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(37, 99, 235, .1);
-    }
+    .why-card:hover { border-color: var(--blue2); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(37,99,235,.1); }
 
     .why-ico {
       width: 52px;
@@ -490,33 +430,12 @@
       margin: 0 auto 16px;
     }
 
-    .why-ico svg {
-      width: 22px;
-      height: 22px;
-      stroke: var(--blue);
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .why-card h3 {
-      font-size: .95rem;
-      font-weight: 700;
-      color: var(--dark);
-      margin-bottom: 8px;
-    }
-
-    .why-card p {
-      font-size: .82rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
+    .why-ico svg { width: 22px; height: 22px; stroke: var(--blue); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .why-card h3 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .why-card p { font-size: .82rem; color: var(--muted); line-height: 1.7; }
 
     /* ─── COURSES ─── */
-    .courses {
-      background: var(--bg);
-    }
+    .courses { background: var(--bg); }
 
     .cgrid {
       display: grid;
@@ -537,11 +456,7 @@
       align-items: center;
     }
 
-    .cc:hover {
-      border-color: var(--blue2);
-      transform: translateY(-4px);
-      box-shadow: 0 14px 36px rgba(37, 99, 235, .12);
-    }
+    .cc:hover { border-color: var(--blue2); transform: translateY(-4px); box-shadow: 0 14px 36px rgba(37,99,235,.12); }
 
     .cc-dot {
       width: 52px;
@@ -553,91 +468,22 @@
       margin: 0 auto 18px;
     }
 
-    .cc-dot svg {
-      width: 22px;
-      height: 22px;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: none;
-    }
+    .cc-dot svg { width: 22px; height: 22px; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .cc h3 { font-size: .975rem; font-weight: 700; color: var(--dark); margin-bottom: 7px; }
+    .cc p { font-size: .82rem; color: var(--muted); line-height: 1.62; margin-bottom: 16px; flex: 1; }
+    .cc-foot { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; }
 
-    .cc h3 {
-      font-size: .975rem;
-      font-weight: 700;
-      color: var(--dark);
-      margin-bottom: 7px;
-    }
+    .cbadge { font-size: .68rem; font-weight: 700; letter-spacing: .4px; padding: 3px 10px; border-radius: 6px; text-transform: uppercase; }
+    .cb-t { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
+    .cb-m { background: #ECFDF5; color: #065F46; border: 1px solid #A7F3D0; }
+    .cb-d { background: #FFF7ED; color: #C2410C; border: 1px solid #FED7AA; }
+    .cb-w { background: #FEF2F2; color: #B91C1C; border: 1px solid #FECACA; }
 
-    .cc p {
-      font-size: .82rem;
-      color: var(--muted);
-      line-height: 1.62;
-      margin-bottom: 16px;
-      flex: 1;
-    }
-
-    .cc-foot {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      width: 100%;
-    }
-
-    .cbadge {
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .4px;
-      padding: 3px 10px;
-      border-radius: 6px;
-      text-transform: uppercase;
-    }
-
-    .cb-t {
-      background: #EFF6FF;
-      color: #1D4ED8;
-      border: 1px solid #BFDBFE;
-    }
-
-    .cb-m {
-      background: #ECFDF5;
-      color: #065F46;
-      border: 1px solid #A7F3D0;
-    }
-
-    .cb-d {
-      background: #FFF7ED;
-      color: #C2410C;
-      border: 1px solid #FED7AA;
-    }
-
-    .cb-w {
-      background: #FEF2F2;
-      color: #B91C1C;
-      border: 1px solid #FECACA;
-    }
-
-    .cc-grade {
-      font-size: .74rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .cc-hint {
-      font-size: .72rem;
-      color: var(--blue);
-      font-weight: 600;
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
+    .cc-grade { font-size: .74rem; color: var(--muted); font-weight: 500; }
+    .cc-hint { font-size: .72rem; color: var(--blue); font-weight: 600; margin-top: 10px; display: flex; align-items: center; gap: 4px; }
 
     /* ─── GRADES ─── */
-    .grades {
-      background: #fff;
-    }
+    .grades { background: #fff; }
 
     .gstrip {
       display: grid;
@@ -655,32 +501,12 @@
       cursor: default;
     }
 
-    .gi:hover {
-      border-color: var(--blue2);
-      background: var(--blue3);
-      transform: translateY(-3px);
-    }
-
-    .gn {
-      display: block;
-      font-size: 1.55rem;
-      font-weight: 800;
-      color: var(--blue);
-      letter-spacing: -1px;
-    }
-
-    .gl {
-      display: block;
-      font-size: .68rem;
-      color: var(--muted);
-      margin-top: 4px;
-      font-weight: 500;
-    }
+    .gi:hover { border-color: var(--blue2); background: var(--blue3); transform: translateY(-3px); }
+    .gn { display: block; font-size: 1.55rem; font-weight: 800; color: var(--blue); letter-spacing: -1px; }
+    .gl { display: block; font-size: .68rem; color: var(--muted); margin-top: 4px; font-weight: 500; }
 
     /* ─── TEAM ─── */
-    .team {
-      background: var(--bg);
-    }
+    .team { background: var(--bg); }
 
     .tgrid {
       display: grid;
@@ -697,11 +523,7 @@
       transition: .3s;
     }
 
-    .tc:hover {
-      border-color: var(--blue2);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(37, 99, 235, .1);
-    }
+    .tc:hover { border-color: var(--blue2); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(37,99,235,.1); }
 
     .tav {
       width: 62px;
@@ -717,17 +539,8 @@
       color: #fff;
     }
 
-    .tc h4 {
-      font-size: .95rem;
-      font-weight: 700;
-      color: var(--dark);
-      margin-bottom: 4px;
-    }
-
-    .tc span {
-      font-size: .78rem;
-      color: var(--muted);
-    }
+    .tc h4 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .tc span { font-size: .78rem; color: var(--muted); }
 
     .founder-chip {
       display: inline-block;
@@ -743,9 +556,7 @@
     }
 
     /* ─── REVIEWS ─── */
-    .reviews {
-      background: #fff;
-    }
+    .reviews { background: #fff; }
 
     .rgrid {
       display: grid;
@@ -761,50 +572,16 @@
       transition: .3s;
     }
 
-    .rc:hover {
-      border-color: var(--blue2);
-    }
-
-    .rstars {
-      display: flex;
-      gap: 3px;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
-
-    .star {
-      width: 14px;
-      height: 14px;
-      background: #F59E0B;
-      clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    }
-
-    .rc p {
-      font-size: .875rem;
-      color: var(--text);
-      line-height: 1.75;
-      margin-bottom: 14px;
-      text-align: center;
-    }
-
-    .rname {
-      font-size: .8rem;
-      font-weight: 700;
-      color: var(--blue);
-      text-align: center;
-    }
+    .rc:hover { border-color: var(--blue2); }
+    .rstars { display: flex; gap: 3px; justify-content: center; margin-bottom: 12px; }
+    .star { width: 14px; height: 14px; background: #F59E0B; clip-path: polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); }
+    .rc p { font-size: .875rem; color: var(--text); line-height: 1.75; margin-bottom: 14px; text-align: center; }
+    .rname { font-size: .8rem; font-weight: 700; color: var(--blue); text-align: center; }
 
     /* ─── CTA ─── */
-    .cta-sec {
-      background: var(--blue);
-      padding: 80px 20px;
-    }
+    .cta-sec { background: var(--blue); padding: 80px 20px; }
 
-    .cta-box {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-    }
+    .cta-box { max-width: 700px; margin: 0 auto; text-align: center; }
 
     .cta-box h2 {
       font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -814,12 +591,7 @@
       margin-bottom: 12px;
     }
 
-    .cta-box p {
-      color: rgba(255, 255, 255, .75);
-      font-size: 1rem;
-      margin-bottom: 32px;
-      line-height: 1.75;
-    }
+    .cta-box p { color: rgba(255,255,255,.75); font-size: 1rem; margin-bottom: 32px; line-height: 1.75; }
 
     .btn-white {
       background: #fff;
@@ -834,59 +606,27 @@
       transition: .2s;
     }
 
-    .btn-white:hover {
-      background: #EFF6FF;
-      transform: translateY(-2px);
-    }
+    .btn-white:hover { background: #EFF6FF; transform: translateY(-2px); }
 
-    .cta-contacts {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
+    .cta-contacts { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 28px; }
 
-    .cti {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255, 255, 255, .75);
-      font-size: .85rem;
-    }
+    .cti { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.75); font-size: .85rem; }
 
     .cti-icon {
       width: 30px;
       height: 30px;
       border-radius: 8px;
-      background: rgba(255, 255, 255, .15);
+      background: rgba(255,255,255,.15);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
 
-    .cti-icon svg {
-      width: 13px;
-      height: 13px;
-      stroke: #fff;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+    .cti-icon svg { width: 13px; height: 13px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-    footer {
-      background: var(--dark);
-      padding: 24px 20px;
-      text-align: center;
-      font-size: .78rem;
-      color: rgba(255, 255, 255, .4);
-    }
-
-    footer strong {
-      color: var(--blue2);
-    }
+    footer { background: var(--dark); padding: 24px 20px; text-align: center; font-size: .78rem; color: rgba(255,255,255,.4); }
+    footer strong { color: var(--blue2); }
 
     /* ─── MODAL ─── */
     .m-overlay {
@@ -894,17 +634,13 @@
       position: fixed;
       inset: 0;
       z-index: 1000;
-      background: rgba(15, 20, 60, .7);
+      background: rgba(15,20,60,.7);
       backdrop-filter: blur(8px);
       padding: 20px;
       overflow-y: auto;
     }
 
-    .m-overlay.open {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
+    .m-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
 
     .modal {
       background: #fff;
@@ -912,27 +648,15 @@
       max-width: 780px;
       width: 100%;
       margin: auto;
-      animation: mIn .28s cubic-bezier(.34, 1.56, .64, 1);
+      animation: mIn .28s cubic-bezier(.34,1.56,.64,1);
     }
 
     @keyframes mIn {
-      from {
-        opacity: 0;
-        transform: translateY(24px) scale(.97);
-      }
-
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from { opacity: 0; transform: translateY(24px) scale(.97); }
+      to { opacity: 1; transform: none; }
     }
 
-    .mh {
-      padding: 28px 32px 0;
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-    }
+    .mh { padding: 28px 32px 0; display: flex; align-items: flex-start; gap: 16px; }
 
     .mh-icon {
       width: 54px;
@@ -944,32 +668,10 @@
       flex-shrink: 0;
     }
 
-    .mh-icon svg {
-      width: 22px;
-      height: 22px;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .mh-text {
-      flex: 1;
-    }
-
-    .mh-text h2 {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--dark);
-      margin-bottom: 5px;
-      letter-spacing: -.3px;
-    }
-
-    .mh-text p {
-      font-size: .85rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
+    .mh-icon svg { width: 22px; height: 22px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .mh-text { flex: 1; }
+    .mh-text h2 { font-size: 1.35rem; font-weight: 800; color: var(--dark); margin-bottom: 5px; letter-spacing: -.3px; }
+    .mh-text p { font-size: .85rem; color: var(--muted); line-height: 1.6; }
 
     .mclose {
       width: 34px;
@@ -987,20 +689,9 @@
       transition: .2s;
     }
 
-    .mclose:hover {
-      background: var(--red2);
-      color: var(--red);
-    }
-
-    .mbody {
-      padding: 24px 32px 28px;
-    }
-
-    .mmodules {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
+    .mclose:hover { background: var(--red2); color: var(--red); }
+    .mbody { padding: 24px 32px 28px; }
+    .mmodules { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
     .mmod {
       background: var(--bg);
@@ -1009,18 +700,8 @@
       padding: 16px 18px;
     }
 
-    .mmod h4 {
-      font-size: .78rem;
-      font-weight: 700;
-      color: var(--blue);
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-    }
-
-    .mmod ul {
-      list-style: none;
-    }
+    .mmod h4 { font-size: .78rem; font-weight: 700; color: var(--blue); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+    .mmod ul { list-style: none; }
 
     .mmod li {
       font-size: .8rem;
@@ -1033,153 +714,41 @@
       align-items: flex-start;
     }
 
-    .mmod li:last-child {
-      border-bottom: none;
-    }
+    .mmod li:last-child { border-bottom: none; }
+    .mmod li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--blue2); flex-shrink: 0; margin-top: 6px; }
+    .mfoot { padding: 0 32px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 
-    .mmod li::before {
-      content: '';
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--blue2);
-      flex-shrink: 0;
-      margin-top: 6px;
-    }
-
-    .mfoot {
-      padding: 0 32px 28px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-
-    .btn-large {
-      padding: 16px 36px;
-      /* bigger height and width */
-      font-size: 1rem;
-      /* slightly larger text */
-      border-radius: 14px;
-      /* more rounded */
-      font-weight: 700;
-      transition: transform 0.2s ease;
-    }
-
-    .btn-large:hover {
-      transform: scale(1.05);
-      background: #1D4ED8 !important;
-    }
-
-
-    /* ─── MOBILE ─── */
+    /* ─── RESPONSIVE ─── */
     @media(max-width:900px) {
-      .summer-in {
-        grid-template-columns: 1fr;
-      }
-
-      .sun-illo {
-        display: none;
-      }
-
-      .mmodules {
-        grid-template-columns: 1fr;
-      }
+      .summer-in { grid-template-columns: 1fr; }
+      .sun-illo { display: none; }
+      .mmodules { grid-template-columns: 1fr; }
     }
 
     @media(max-width:700px) {
-      section {
-        padding: 60px 0;
-      }
+      section { padding: 60px 0; }
+      .hero { padding: 60px 16px 50px; }
+      .hstats { grid-template-columns: repeat(2, 1fr); }
+      .hstat:nth-child(2) { border-right: none; }
+      .hstat:nth-child(3) { border-top: 1px solid var(--border); }
+      .hstat:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
 
-      .hero {
-        padding: 60px 16px 50px;
-      }
+      /* ── MOBILE NAV: hide all links, center logo ── */
+      .nav-links { display: none; }
+      .nav-in { justify-content: center; }
+      .logo { font-size: 1.5rem; }
 
-      .hstats {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hstat:nth-child(2) {
-        border-right: none;
-      }
-
-      .hstat:nth-child(3) {
-        border-top: 1px solid var(--border);
-      }
-
-      .hstat:nth-child(4) {
-        border-top: 1px solid var(--border);
-        border-right: none;
-      }
-
-      .nav-links a:not(.nav-cta) {
-        display: none;
-      }
-
-      h2.sec {
-        font-size: 1.7rem;
-      }
-
-      .mh {
-        padding: 20px 20px 0;
-      }
-
-      .mbody {
-        padding: 16px 20px 20px;
-      }
-
-      .mfoot {
-        padding: 0 20px 20px;
-      }
-
-      .cta-box h2 {
-        font-size: 1.6rem;
-      }
+      h2.sec { font-size: 1.7rem; }
+      .mh { padding: 20px 20px 0; }
+      .mbody { padding: 16px 20px 20px; }
+      .mfoot { padding: 0 20px 20px; }
+      .cta-box h2 { font-size: 1.6rem; }
     }
 
     @media(max-width:400px) {
-      .hero h1 {
-        letter-spacing: -1.5px;
-      }
-
-      .cgrid {
-        grid-template-columns: 1fr;
-      }
-
-      .tgrid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-    }
-
-    @media(max-width:700px) {
-      .nav-links {
-        flex-wrap: nowrap;
-        /* keep buttons in one row */
-        justify-content: flex-end;
-        gap: 0px;
-        /* tighter gap */
-        overflow-x: auto;
-        /* allow scrolling if needed */
-        /* prevent cutting off */
-      }
-
-      .nav-links a.nav-cta,
-      .nav-links a.btn-large {
-        flex-shrink: 1;
-        /* allow shrinking */
-        min-width: 0;
-        /* important for shrink to work */
-        padding: 10px;
-        /* smaller buttons */
-        font-size: 0.7rem;
-        /* smaller text */
-        white-space: nowrap;
-        /* prevent wrapping */
-        text-align: center;
-      }
+      .hero h1 { letter-spacing: -1.5px; }
+      .cgrid { grid-template-columns: 1fr; }
+      .tgrid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -1195,8 +764,7 @@
         <a href="#courses">Courses</a>
         <a href="#team">Team</a>
         <a href="#contact" class="nav-cta">Enroll Free</a>
-        <a href="https://forms.gle/BDcf29oUy2bNsxXw6" class="nav-cta btn-large" target="_blank" rel="noopener">Register
-          Now</a>
+        <a href="https://forms.gle/BDcf29oUy2bNsxXw6" class="nav-cta btn-large" target="_blank" rel="noopener">Register Now</a>
       </div>
     </div>
   </nav>
@@ -1206,39 +774,26 @@
     🎉 Summer 2025 — <strong>20% OFF first month + Sibling Discount</strong> for US &amp; Canada students!
   </div>
 
-  <!-- ══════════ HERO ══════════ -->
+  <!-- HERO -->
   <div class="hero">
     <div class="container">
       <div class="pill"><span class="pill-dot"></span>Serving USA 🇺🇸 &amp; Canada 🇨🇦</div>
       <h1>Kids Who Learn<br><span class="accent">Shine</span> <span class="accent2">Brighter.</span></h1>
-      <p>Premium live 1-on-1 tutoring for Grades 1–10. Expert educators, real results, zero commute — trusted by
-        families across North America.</p>
+      <p>Premium live 1-on-1 tutoring for Grades 1–10. Expert educators, real results, zero commute — trusted by families across North America.</p>
       <div class="hero-btns">
         <a href="#contact" class="btn-blue">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Book Free Trial
         </a>
         <a href="#courses" class="btn-out">Explore Courses →</a>
       </div>
-
       <div class="hero-btns">
         <a href="https://forms.gle/BDcf29oUy2bNsxXw6" class="btn-blue">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Enroll Now
         </a>
         <b class="btn-out">Connect on Whatsapp Now : +1 (548) 574-2055</b>
-
       </div>
-
-
       <div class="hstats">
         <div class="hstat"><strong>500+</strong><em>Students</em></div>
         <div class="hstat"><strong>10+</strong><em>Tutors</em></div>
@@ -1248,391 +803,109 @@
     </div>
   </div>
 
-  <!-- ══════════ SUMMER ══════════ -->
+  <!-- SUMMER -->
   <div class="summer" id="summer">
     <div class="summer-in">
       <div>
         <div class="sum-badge">☀️ Summer 2025 Special</div>
         <h2>Summer Break Is<br><span>The Best Time</span><br>To Get Ahead.</h2>
-        <p>While other kids pause, yours accelerates. MentorHub's Summer Program keeps momentum alive — with exclusive
-          seasonal discounts to make it even easier.</p>
+        <p>While other kids pause, yours accelerates. MentorHub's Summer Program keeps momentum alive — with exclusive seasonal discounts to make it even easier.</p>
         <div class="offers">
           <div class="offer">
             <div class="offer-icon" style="background:rgba(234,88,12,.1);border:1px solid rgba(234,88,12,.2);">
-              <svg style="stroke:#EA580C;" viewBox="0 0 24 24">
-                <circle cx="12" cy="5" r="3" />
-                <line x1="12" y1="22" x2="12" y2="8" />
-                <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-              </svg>
+              <svg style="stroke:#EA580C;" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
             </div>
-            <div class="offer-text">
-              <h4>Summer First Month Discount</h4>
-              <p>Enroll any course this summer and save on your first month</p>
-            </div>
+            <div class="offer-text"><h4>Summer First Month Discount</h4><p>Enroll any course this summer and save on your first month</p></div>
             <div class="offer-badge">20% OFF</div>
           </div>
           <div class="offer">
             <div class="offer-icon" style="background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.2);">
-              <svg style="stroke:#7C3AED;" viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
+              <svg style="stroke:#7C3AED;" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <div class="offer-text">
-              <h4>Sibling Discount</h4>
-              <p>Enroll 2 or more siblings and each saves extra</p>
-            </div>
+            <div class="offer-text"><h4>Sibling Discount</h4><p>Enroll 2 or more siblings and each saves extra</p></div>
             <div class="offer-badge">15% OFF</div>
           </div>
           <div class="offer">
             <div class="offer-icon" style="background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);">
-              <svg style="stroke:#2563EB;" viewBox="0 0 24 24">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
+              <svg style="stroke:#2563EB;" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <div class="offer-text">
-              <h4>Stack Both Offers</h4>
-              <p>Siblings enrolling in summer? Stack both for max savings</p>
-            </div>
+            <div class="offer-text"><h4>Stack Both Offers</h4><p>Siblings enrolling in summer? Stack both for max savings</p></div>
             <div class="offer-badge">35% OFF</div>
           </div>
         </div>
       </div>
-
-      <!-- Sun SVG -->
       <div class="sun-illo">
         <svg viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="sunG" cx="50%" cy="50%">
-              <stop offset="0%" stop-color="#FFD700" />
-              <stop offset="50%" stop-color="#FF8C00" />
-              <stop offset="100%" stop-color="#FF4500" stop-opacity=".0" />
-            </radialGradient>
-          </defs>
-          <!-- Glow -->
-          <circle cx="140" cy="110" r="95" fill="url(#sunG)" opacity=".3" />
-          <!-- Rays -->
-          <g stroke="#FFA500" stroke-width="2.5" opacity=".35">
-            <line x1="140" y1="25" x2="140" y2="10" />
-            <line x1="140" y1="195" x2="140" y2="210" />
-            <line x1="55" y1="110" x2="40" y2="110" />
-            <line x1="225" y1="110" x2="240" y2="110" />
-            <line x1="80" y1="50" x2="68" y2="38" />
-            <line x1="200" y1="50" x2="212" y2="38" />
-            <line x1="80" y1="170" x2="68" y2="182" />
-            <line x1="200" y1="170" x2="212" y2="182" />
-            <line x1="60" y1="80" x2="46" y2="70" />
-            <line x1="220" y1="80" x2="234" y2="70" />
-            <line x1="60" y1="140" x2="46" y2="150" />
-            <line x1="220" y1="140" x2="234" y2="150" />
-          </g>
-          <!-- Rings -->
-          <circle cx="140" cy="110" r="78" fill="none" stroke="rgba(255,165,0,.07)" stroke-width="1" />
-          <circle cx="140" cy="110" r="58" fill="none" stroke="rgba(255,165,0,.09)" stroke-width="1" />
-          <!-- Sun -->
-          <circle cx="140" cy="110" r="48" fill="#FF8C00" />
-          <circle cx="140" cy="110" r="38" fill="#FFB300" />
-          <circle cx="140" cy="110" r="30" fill="#FFD700" />
-          <!-- Face -->
-          <circle cx="131" cy="105" r="3.5" fill="#C45000" />
-          <circle cx="149" cy="105" r="3.5" fill="#C45000" />
-          <path d="M129 117 Q140 125 151 117" stroke="#C45000" stroke-width="2.5" fill="none" stroke-linecap="round" />
-          <!-- Clouds -->
-          <g opacity=".45" fill="#fff">
-            <ellipse cx="42" cy="135" rx="28" ry="12" />
-            <ellipse cx="56" cy="127" rx="18" ry="12" />
-            <ellipse cx="232" cy="120" rx="24" ry="10" />
-            <ellipse cx="245" cy="113" rx="15" ry="10" />
-          </g>
-          <!-- Ground -->
-          <rect x="0" y="268" width="280" height="32" rx="6" fill="#15803D" opacity=".5" />
-          <ellipse cx="140" cy="268" rx="140" ry="10" fill="#166534" opacity=".4" />
-          <!-- Tree L -->
-          <rect x="38" y="220" width="8" height="55" rx="3" fill="#854D0E" />
-          <ellipse cx="42" cy="208" rx="22" ry="24" fill="#15803D" />
-          <ellipse cx="42" cy="198" rx="15" ry="17" fill="#16A34A" />
-          <!-- Tree R -->
-          <rect x="232" y="225" width="8" height="50" rx="3" fill="#854D0E" />
-          <ellipse cx="236" cy="214" rx="19" ry="21" fill="#15803D" />
-          <ellipse cx="236" cy="205" rx="13" ry="15" fill="#16A34A" />
-          <!-- Kid body -->
-          <circle cx="140" cy="228" r="12" fill="#FBBF24" />
-          <circle cx="134" cy="225" r="2.5" fill="#1E3A5F" />
-          <circle cx="146" cy="225" r="2.5" fill="#1E3A5F" />
-          <path d="M134 233 Q140 238 146 233" stroke="#B45309" stroke-width="2" fill="none" stroke-linecap="round" />
-          <rect x="129" y="238" width="22" height="22" rx="7" fill="#2563EB" />
-          <path d="M124 258 Q118 268 116 278" stroke="#374151" stroke-width="6" fill="none" stroke-linecap="round" />
-          <path d="M156 258 Q162 268 164 278" stroke="#374151" stroke-width="6" fill="none" stroke-linecap="round" />
-          <!-- Book -->
-          <rect x="120" y="246" width="40" height="26" rx="4" fill="#1D4ED8" opacity=".9" />
-          <rect x="120" y="246" width="20" height="26" rx="4" fill="#2563EB" />
-          <line x1="140" y1="246" x2="140" y2="272" stroke="rgba(255,255,255,.2)" stroke-width="1" />
-          <line x1="123" y1="254" x2="137" y2="254" stroke="rgba(255,255,255,.3)" stroke-width="1" />
-          <line x1="123" y1="259" x2="137" y2="259" stroke="rgba(255,255,255,.3)" stroke-width="1" />
-          <line x1="123" y1="264" x2="137" y2="264" stroke="rgba(255,255,255,.3)" stroke-width="1" />
-          <!-- Stars -->
-          <g fill="#FBBF24" opacity=".7">
-            <circle cx="100" cy="60" r="2" />
-            <circle cx="185" cy="45" r="1.5" />
-            <circle cx="70" cy="80" r="1.5" />
-            <circle cx="210" cy="85" r="2" />
-          </g>
+          <defs><radialGradient id="sunG" cx="50%" cy="50%"><stop offset="0%" stop-color="#FFD700"/><stop offset="50%" stop-color="#FF8C00"/><stop offset="100%" stop-color="#FF4500" stop-opacity=".0"/></radialGradient></defs>
+          <circle cx="140" cy="110" r="95" fill="url(#sunG)" opacity=".3"/>
+          <g stroke="#FFA500" stroke-width="2.5" opacity=".35"><line x1="140" y1="25" x2="140" y2="10"/><line x1="140" y1="195" x2="140" y2="210"/><line x1="55" y1="110" x2="40" y2="110"/><line x1="225" y1="110" x2="240" y2="110"/><line x1="80" y1="50" x2="68" y2="38"/><line x1="200" y1="50" x2="212" y2="38"/><line x1="80" y1="170" x2="68" y2="182"/><line x1="200" y1="170" x2="212" y2="182"/><line x1="60" y1="80" x2="46" y2="70"/><line x1="220" y1="80" x2="234" y2="70"/><line x1="60" y1="140" x2="46" y2="150"/><line x1="220" y1="140" x2="234" y2="150"/></g>
+          <circle cx="140" cy="110" r="78" fill="none" stroke="rgba(255,165,0,.07)" stroke-width="1"/>
+          <circle cx="140" cy="110" r="58" fill="none" stroke="rgba(255,165,0,.09)" stroke-width="1"/>
+          <circle cx="140" cy="110" r="48" fill="#FF8C00"/><circle cx="140" cy="110" r="38" fill="#FFB300"/><circle cx="140" cy="110" r="30" fill="#FFD700"/>
+          <circle cx="131" cy="105" r="3.5" fill="#C45000"/><circle cx="149" cy="105" r="3.5" fill="#C45000"/>
+          <path d="M129 117 Q140 125 151 117" stroke="#C45000" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <g opacity=".45" fill="#fff"><ellipse cx="42" cy="135" rx="28" ry="12"/><ellipse cx="56" cy="127" rx="18" ry="12"/><ellipse cx="232" cy="120" rx="24" ry="10"/><ellipse cx="245" cy="113" rx="15" ry="10"/></g>
+          <rect x="0" y="268" width="280" height="32" rx="6" fill="#15803D" opacity=".5"/>
+          <ellipse cx="140" cy="268" rx="140" ry="10" fill="#166534" opacity=".4"/>
+          <rect x="38" y="220" width="8" height="55" rx="3" fill="#854D0E"/><ellipse cx="42" cy="208" rx="22" ry="24" fill="#15803D"/><ellipse cx="42" cy="198" rx="15" ry="17" fill="#16A34A"/>
+          <rect x="232" y="225" width="8" height="50" rx="3" fill="#854D0E"/><ellipse cx="236" cy="214" rx="19" ry="21" fill="#15803D"/><ellipse cx="236" cy="205" rx="13" ry="15" fill="#16A34A"/>
+          <circle cx="140" cy="228" r="12" fill="#FBBF24"/><circle cx="134" cy="225" r="2.5" fill="#1E3A5F"/><circle cx="146" cy="225" r="2.5" fill="#1E3A5F"/>
+          <path d="M134 233 Q140 238 146 233" stroke="#B45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="129" y="238" width="22" height="22" rx="7" fill="#2563EB"/>
+          <path d="M124 258 Q118 268 116 278" stroke="#374151" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M156 258 Q162 268 164 278" stroke="#374151" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <rect x="120" y="246" width="40" height="26" rx="4" fill="#1D4ED8" opacity=".9"/><rect x="120" y="246" width="20" height="26" rx="4" fill="#2563EB"/>
+          <line x1="140" y1="246" x2="140" y2="272" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+          <line x1="123" y1="254" x2="137" y2="254" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <line x1="123" y1="259" x2="137" y2="259" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <line x1="123" y1="264" x2="137" y2="264" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <g fill="#FBBF24" opacity=".7"><circle cx="100" cy="60" r="2"/><circle cx="185" cy="45" r="1.5"/><circle cx="70" cy="80" r="1.5"/><circle cx="210" cy="85" r="2"/></g>
         </svg>
       </div>
     </div>
   </div>
 
-  <!-- ══════════ WHY ══════════ -->
+  <!-- WHY -->
   <section class="why" id="why">
     <div class="container">
-      <div class="sec-head">
-        <div class="pill"><span class="pill-dot"></span>Why MentorHub</div>
-      </div>
+      <div class="sec-head"><div class="pill"><span class="pill-dot"></span>Why MentorHub</div></div>
       <h2 class="sec">Everything Your Child <span>Needs to Succeed</span></h2>
       <p class="sec-sub">Built for ambitious students and peace-of-mind parents across North America.</p>
       <div class="why-grid">
-        <div class="why-card">
-          <div class="why-ico"><svg viewBox="0 0 24 24">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg></div>
-          <h3>Expert Tutors</h3>
-          <p>Certified educators aligned with US &amp; Canadian curriculum, dedicated to every child.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-ico"><svg viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <path d="M8 21h8M12 17v4" />
-            </svg></div>
-          <h3>100% Live Online</h3>
-          <p>Real-time interactive sessions. Works on any device across all North American time zones.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-ico"><svg viewBox="0 0 24 24">
-              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-            </svg></div>
-          <h3>Personalized Plans</h3>
-          <p>Custom lessons built around each student's unique pace, goals and learning style.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-ico"><svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg></div>
-          <h3>Flexible Schedule</h3>
-          <p>Morning, evening, weekends — you set the time. We show up ready to teach.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-ico"><svg viewBox="0 0 24 24">
-              <circle cx="12" cy="8" r="6" />
-              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
-            </svg></div>
-          <h3>Completion Certificate</h3>
-          <p>Internationally recognized certificates that boost every student's academic profile.</p>
-        </div>
+        <div class="why-card"><div class="why-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Expert Tutors</h3><p>Certified educators aligned with US &amp; Canadian curriculum, dedicated to every child.</p></div>
+        <div class="why-card"><div class="why-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>100% Live Online</h3><p>Real-time interactive sessions. Works on any device across all North American time zones.</p></div>
+        <div class="why-card"><div class="why-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h3>Personalized Plans</h3><p>Custom lessons built around each student's unique pace, goals and learning style.</p></div>
+        <div class="why-card"><div class="why-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Flexible Schedule</h3><p>Morning, evening, weekends — you set the time. We show up ready to teach.</p></div>
+        <div class="why-card"><div class="why-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><h3>Completion Certificate</h3><p>Internationally recognized certificates that boost every student's academic profile.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ COURSES ══════════ -->
+  <!-- COURSES -->
   <section class="courses" id="courses">
     <div class="container">
-      <div class="sec-head">
-        <div class="pill"><span class="pill-dot"></span>What We Teach</div>
-      </div>
+      <div class="sec-head"><div class="pill"><span class="pill-dot"></span>What We Teach</div></div>
       <h2 class="sec">Our <span>Course Catalog</span></h2>
       <p class="sec-sub">Click any course to see the full syllabus, modules and topics.</p>
       <div class="cgrid">
-
-        <div class="cc" onclick="openM('web-design')">
-          <div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;"
-              viewBox="0 0 24 24">
-              <polyline points="16 18 22 12 16 6" />
-              <polyline points="8 6 2 12 8 18" />
-            </svg></div>
-          <h3>Web Designing</h3>
-          <p>HTML, CSS, JavaScript, Bootstrap, Figma — build stunning responsive websites from scratch.</p>
-          <div class="cc-foot"><span class="cbadge cb-t">Tech</span><span class="cc-grade">All levels</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('web-dev')">
-          <div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;"
-              viewBox="0 0 24 24">
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-            </svg></div>
-          <h3>Web Development</h3>
-          <p>PHP &amp; MySQL, full-stack database-driven apps with real-world project experience.</p>
-          <div class="cc-foot"><span class="cbadge cb-t">Tech</span><span class="cc-grade">Intermediate</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('python')">
-          <div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;"
-              viewBox="0 0 24 24">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-            </svg></div>
-          <h3>Python Programming</h3>
-          <p>Fundamentals to Flask, NumPy &amp; Pandas. Data analysis, beginner to advanced.</p>
-          <div class="cc-foot"><span class="cbadge cb-m">Coding</span><span class="cc-grade">All levels</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('java')">
-          <div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;"
-              viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <line x1="8" y1="21" x2="16" y2="21" />
-              <line x1="12" y1="17" x2="12" y2="21" />
-            </svg></div>
-          <h3>Java Programming</h3>
-          <p>OOP, data structures, algorithms and real project builds for confident developers.</p>
-          <div class="cc-foot"><span class="cbadge cb-t">Coding</span><span class="cc-grade">Intermediate</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('android')">
-          <div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;"
-              viewBox="0 0 24 24">
-              <rect x="5" y="2" width="14" height="20" rx="2" />
-              <line x1="12" y1="18" x2="12.01" y2="18" />
-            </svg></div>
-          <h3>Android Development</h3>
-          <p>Design, build and publish real Android apps — from wireframes to Play Store.</p>
-          <div class="cc-foot"><span class="cbadge cb-t">Mobile</span><span class="cc-grade">Advanced</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('graphics')">
-          <div class="cc-dot" style="background:#FFF7ED;border:1px solid #FED7AA;"><svg style="stroke:#EA580C;"
-              viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <circle cx="12" cy="12" r="6" />
-              <circle cx="12" cy="12" r="2" />
-            </svg></div>
-          <h3>Graphics / UI·UX</h3>
-          <p>Canva, Figma, branding &amp; professional UI design principles for creative learners.</p>
-          <div class="cc-foot"><span class="cbadge cb-d">Design</span><span class="cc-grade">All levels</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('algebra1')">
-          <div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;"
-              viewBox="0 0 24 24">
-              <line x1="4" y1="9" x2="20" y2="9" />
-              <line x1="4" y1="15" x2="20" y2="15" />
-              <line x1="10" y1="3" x2="8" y2="21" />
-              <line x1="16" y1="3" x2="14" y2="21" />
-            </svg></div>
-          <h3>Algebra I</h3>
-          <p>Linear equations, inequalities, functions, polynomials, quadratics and radicals.</p>
-          <div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 7–9</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('algebra2')">
-          <div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;"
-              viewBox="0 0 24 24">
-              <line x1="4" y1="19" x2="20" y2="19" />
-              <polyline points="4 15 8 9 12 13 16 5 20 15" />
-            </svg></div>
-          <h3>Algebra II</h3>
-          <p>Quadratic functions, logarithms, exponential functions, sequences and series.</p>
-          <div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 9–10</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('math')">
-          <div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;"
-              viewBox="0 0 24 24">
-              <rect x="3" y="3" width="7" height="7" />
-              <rect x="14" y="3" width="7" height="7" />
-              <rect x="14" y="14" width="7" height="7" />
-              <rect x="3" y="14" width="7" height="7" />
-            </svg></div>
-          <h3>Mathematics 1–8</h3>
-          <p>Complete Grade 1–10 curriculum from basic arithmetic to advanced algebra and geometry.</p>
-          <div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 1–10</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
-        <div class="cc" onclick="openM('writing')">
-          <div class="cc-dot" style="background:#FEF2F2;border:1px solid #FECACA;"><svg style="stroke:#DC2626;"
-              viewBox="0 0 24 24">
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-            </svg></div>
-          <h3>Story &amp; Research Writing</h3>
-          <p>Creative storytelling, academic essays, citations and scholarly writing for all grades.</p>
-          <div class="cc-foot"><span class="cbadge cb-w">Writing</span><span class="cc-grade">Gr. 1–12</span></div>
-          <div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>View Full Syllabus</div>
-        </div>
-
+        <div class="cc" onclick="openM('web-design')"><div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Web Designing</h3><p>HTML, CSS, JavaScript, Bootstrap, Figma — build stunning responsive websites from scratch.</p><div class="cc-foot"><span class="cbadge cb-t">Tech</span><span class="cc-grade">All levels</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('web-dev')"><div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Web Development</h3><p>PHP &amp; MySQL, full-stack database-driven apps with real-world project experience.</p><div class="cc-foot"><span class="cbadge cb-t">Tech</span><span class="cc-grade">Intermediate</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('python')"><div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>Python Programming</h3><p>Fundamentals to Flask, NumPy &amp; Pandas. Data analysis, beginner to advanced.</p><div class="cc-foot"><span class="cbadge cb-m">Coding</span><span class="cc-grade">All levels</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('java')"><div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Java Programming</h3><p>OOP, data structures, algorithms and real project builds for confident developers.</p><div class="cc-foot"><span class="cbadge cb-t">Coding</span><span class="cc-grade">Intermediate</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('android')"><div class="cc-dot" style="background:#EFF6FF;border:1px solid #BFDBFE;"><svg style="stroke:#2563EB;" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div><h3>Android Development</h3><p>Design, build and publish real Android apps — from wireframes to Play Store.</p><div class="cc-foot"><span class="cbadge cb-t">Mobile</span><span class="cc-grade">Advanced</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('graphics')"><div class="cc-dot" style="background:#FFF7ED;border:1px solid #FED7AA;"><svg style="stroke:#EA580C;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Graphics / UI·UX</h3><p>Canva, Figma, branding &amp; professional UI design principles for creative learners.</p><div class="cc-foot"><span class="cbadge cb-d">Design</span><span class="cc-grade">All levels</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('algebra1')"><div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;" viewBox="0 0 24 24"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg></div><h3>Algebra I</h3><p>Linear equations, inequalities, functions, polynomials, quadratics and radicals.</p><div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 7–9</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('algebra2')"><div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;" viewBox="0 0 24 24"><line x1="4" y1="19" x2="20" y2="19"/><polyline points="4 15 8 9 12 13 16 5 20 15"/></svg></div><h3>Algebra II</h3><p>Quadratic functions, logarithms, exponential functions, sequences and series.</p><div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 9–10</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('math')"><div class="cc-dot" style="background:#ECFDF5;border:1px solid #A7F3D0;"><svg style="stroke:#059669;" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><h3>Mathematics 1–8</h3><p>Complete Grade 1–10 curriculum from basic arithmetic to advanced algebra and geometry.</p><div class="cc-foot"><span class="cbadge cb-m">Math</span><span class="cc-grade">Gr. 1–10</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
+        <div class="cc" onclick="openM('writing')"><div class="cc-dot" style="background:#FEF2F2;border:1px solid #FECACA;"><svg style="stroke:#DC2626;" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h3>Story &amp; Research Writing</h3><p>Creative storytelling, academic essays, citations and scholarly writing for all grades.</p><div class="cc-foot"><span class="cbadge cb-w">Writing</span><span class="cc-grade">Gr. 1–12</span></div><div class="cc-hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>View Full Syllabus</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ GRADES ══════════ -->
+  <!-- GRADES -->
   <section class="grades" id="grades">
     <div class="container">
-      <div class="sec-head">
-        <div class="pill"><span class="pill-dot"></span>Grade Coverage</div>
-      </div>
+      <div class="sec-head"><div class="pill"><span class="pill-dot"></span>Grade Coverage</div></div>
       <h2 class="sec">Grades <span>1 through 10</span></h2>
       <p class="sec-sub">Curriculum-aligned for every stage of a child's academic journey.</p>
       <div class="gstrip">
@@ -1650,224 +923,84 @@
     </div>
   </section>
 
-  <!-- ══════════ TEAM ══════════ -->
+  <!-- TEAM -->
   <section class="team" id="team">
     <div class="container">
-      <div class="sec-head">
-        <div class="pill"><span class="pill-dot"></span>Our People</div>
-      </div>
+      <div class="sec-head"><div class="pill"><span class="pill-dot"></span>Our People</div></div>
       <h2 class="sec">Meet the <span>MentorHub Team</span></h2>
       <p class="sec-sub">Passionate educators and professionals committed to student excellence.</p>
       <div class="tgrid">
-        <div class="tc" style="border-color:#BFDBFE;">
-          <div class="tav" style="background:linear-gradient(135deg,#2563EB,#7C3AED);">AB</div>
-          <h4>Abdullah</h4><span>Owner &amp; Senior Faculty</span>
-          <div class="founder-chip">Founder</div>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#964605,#10B981);">MS</div>
-          <h4>Miss Sidra</h4><span>Lead/Head Faculty</span>
-        </div>
-
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#059669,#10B981);">AH</div>
-          <h4>Ahmed</h4><span>Accounts Manager</span>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#2563EB,#3B82F6);">WK</div>
-          <h4>Waqas Khan</h4><span>Marketing Manager</span>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#D97706,#F59E0B);">HA</div>
-          <h4>Hassan Ali</h4><span>Senior Faculty</span>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#DB2777,#EC4899);">ZS</div>
-          <h4>Zeeshan</h4><span>Graphics Specialist</span>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#059669,#34D399);">BA</div>
-          <h4>Bilal Ahmed</h4><span>Faculty Member</span>
-        </div>
-        <div class="tc">
-          <div class="tav" style="background:linear-gradient(135deg,#DC2626,#EF4444);">SF</div>
-          <h4>Sufiyan</h4><span>Faculty Member</span>
-        </div>
+        <div class="tc" style="border-color:#BFDBFE;"><div class="tav" style="background:linear-gradient(135deg,#2563EB,#7C3AED);">AB</div><h4>Abdullah</h4><span>Owner &amp; Senior Faculty</span><div class="founder-chip">Founder</div></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#964605,#10B981);">MS</div><h4>Miss Sidra</h4><span>Lead/Head Faculty</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#059669,#10B981);">AH</div><h4>Ahmed</h4><span>Accounts Manager</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#2563EB,#3B82F6);">WK</div><h4>Waqas Khan</h4><span>Marketing Manager</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#D97706,#F59E0B);">HA</div><h4>Hassan Ali</h4><span>Senior Faculty</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#DB2777,#EC4899);">ZS</div><h4>Zeeshan</h4><span>Graphics Specialist</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#059669,#34D399);">BA</div><h4>Bilal Ahmed</h4><span>Faculty Member</span></div>
+        <div class="tc"><div class="tav" style="background:linear-gradient(135deg,#DC2626,#EF4444);">SF</div><h4>Sufiyan</h4><span>Faculty Member</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ REVIEWS ══════════ -->
+  <!-- REVIEWS -->
   <section class="reviews" id="reviews">
     <div class="container">
-      <div class="sec-head">
-        <div class="pill"><span class="pill-dot"></span>Parent Reviews</div>
-      </div>
+      <div class="sec-head"><div class="pill"><span class="pill-dot"></span>Parent Reviews</div></div>
       <h2 class="sec">What <span>Parents Are Saying</span></h2>
       <p class="sec-sub">Real feedback from families across USA and Canada.</p>
       <div class="rgrid">
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"Python is now my child's favorite subject, thanks to the engaging environment at MentorHub!"</p>
-          <div class="rname">Hasnain Khan — Texas, USA</div>
-        </div>
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"My child's math grades went from C to A in just 6 weeks. The personalized approach is incredible."</p>
-          <div class="rname">Maria Khan — Ontario, Canada</div>
-        </div>
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"I'm amazed at how they teach web design to kids — hands-on, interactive and very practical."</p>
-          <div class="rname">Haroon Mumtaz — Florida, USA</div>
-        </div>
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"Graphics design brought out a creative side in my kid I didn't know existed. Amazing academy!"</p>
-          <div class="rname">Zehra Sajjad — California, USA</div>
-        </div>
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"Python classes are well-structured. My child is now confidently writing real programs!"</p>
-          <div class="rname">Syed Akhter Ali — New York, USA</div>
-        </div>
-        <div class="rc">
-          <div class="rstars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-          <p>"Diverse courses, brilliant instructors. My child now looks forward to learning every day."</p>
-          <div class="rname">Zeeshan Sami — Toronto, Canada</div>
-        </div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"Python is now my child's favorite subject, thanks to the engaging environment at MentorHub!"</p><div class="rname">Hasnain Khan — Texas, USA</div></div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"My child's math grades went from C to A in just 6 weeks. The personalized approach is incredible."</p><div class="rname">Maria Khan — Ontario, Canada</div></div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"I'm amazed at how they teach web design to kids — hands-on, interactive and very practical."</p><div class="rname">Haroon Mumtaz — Florida, USA</div></div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"Graphics design brought out a creative side in my kid I didn't know existed. Amazing academy!"</p><div class="rname">Zehra Sajjad — California, USA</div></div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"Python classes are well-structured. My child is now confidently writing real programs!"</p><div class="rname">Syed Akhter Ali — New York, USA</div></div>
+        <div class="rc"><div class="rstars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p>"Diverse courses, brilliant instructors. My child now looks forward to learning every day."</p><div class="rname">Zeeshan Sami — Toronto, Canada</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ CTA ══════════ -->
+  <!-- CTA -->
   <div class="cta-sec" id="contact">
     <div class="cta-box">
-      <div class="pill"
-        style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff;margin:0 auto 22px;"><span
-          style="background:#fff;" class="pill-dot"></span>Get Started Today</div>
+      <div class="pill" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff;margin:0 auto 22px;"><span style="background:#fff;" class="pill-dot"></span>Get Started Today</div>
       <h2>Book Your Child's <br>Free Trial Lesson</h2>
       <p>No commitment. No credit card. Just one session that could change everything.</p>
       <a href="https://wa.me/15485742055" class="btn-white" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         Chat with us on WhatsApp!
       </a>
       <div class="cta-contacts">
-        <div class="cti">
-          <div class="cti-icon"><svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg></div>mentorhubonline.github.io
-        </div>
-        <div class="cti">
-          <div class="cti-icon"><svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg></div>Mon–Sat 9AM–9PM EST/PST
-        </div>
-        <div class="cti">
-          <div class="cti-icon"><svg viewBox="0 0 24 24">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg></div><b>4510 Common St #107, Lake Charles, LA 70607, USA</b>
-        </div>
+        <div class="cti"><div class="cti-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>mentorhubonline.github.io</div>
+        <div class="cti"><div class="cti-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>Mon–Sat 9AM–9PM EST/PST</div>
+        <div class="cti"><div class="cti-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><b>4510 Common St #107, Lake Charles, LA 70607, USA</b></div>
       </div>
     </div>
   </div>
 
   <footer>&copy; 2025 <strong>MentorHub</strong> Online Tutor Academy — USA &amp; Canada. All rights reserved.</footer>
 
-  <!-- ══════════ MODAL ══════════ -->
+  <!-- MODAL -->
   <div class="m-overlay" id="mOverlay" onclick="closeMOut(event)">
     <div class="modal" id="mBox">
       <div class="mh">
         <div class="mh-icon" id="mIcon"></div>
-        <div class="mh-text">
-          <h2 id="mTitle"></h2>
-          <p id="mDesc"></p>
-        </div>
+        <div class="mh-text"><h2 id="mTitle"></h2><p id="mDesc"></p></div>
         <button class="mclose" onclick="closeM()">✕</button>
       </div>
-      <div class="mbody">
-        <div class="mmodules" id="mMods"></div>
-      </div>
+      <div class="mbody"><div class="mmodules" id="mMods"></div></div>
       <div class="mfoot">
-        <a href="#contact" class="btn-blue" onclick="closeM()" style="font-size:.875rem;padding:11px 22px;">Enroll Now
-          →</a>
+        <a href="#contact" class="btn-blue" onclick="closeM()" style="font-size:.875rem;padding:11px 22px;">Enroll Now →</a>
         <span style="font-size:.8rem;color:var(--muted);">Free trial available — no payment needed</span>
       </div>
     </div>
   </div>
 
   <script>
-    const C = {
-      'web-design': { t: 'Web Designing', d: 'Master the art of web design — from zero to building complete, responsive, professional websites.', ic: '#2563EB', ib: '#EFF6FF', svg: '<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>', m: [{ h: 'Module 1 — Intro', l: ['Overview of Web Designing', 'Web Technologies & Tools', 'Understanding UX and UI', 'Basics of Web Graphics'] }, { h: 'Module 2 — HTML', l: ['HTML Structure & Syntax', 'Common Tags: Headings, Lists, Links', 'HTML5 Semantic Elements', 'Forms & Input Types', 'Audio & Video Integration'] }, { h: 'Module 3 — CSS', l: ['Selectors, Properties & Values', 'Box Model: Margins, Borders, Padding', 'Flexbox and Grid Layouts', 'Responsive Design & Media Queries', 'CSS Animations & Transitions'] }, { h: 'Module 4 — JavaScript', l: ['Variables, Data Types & Operators', 'Functions and Events', 'DOM Manipulation', 'Basic Form Validations'] }, { h: 'Module 5 — Tools', l: ['VS Code & Sublime Text', 'Bootstrap Framework', 'Figma & Canva'] }, { h: 'Module 6 — Responsive Design', l: ['Principles of Responsive Design', 'Designing for All Screen Sizes', 'Testing & Debugging'] }, { h: 'Module 7 — Hosting', l: ['Domain Names & Hosting', 'Introduction to FTP', 'GitHub Pages Deployment'] }, { h: 'Module 8 — Capstone Project', l: ['Complete Website Build', 'Home, About, Services, Contact', 'Forms, Media & Responsiveness'] }] },
-      'web-dev': { t: 'Web Development — PHP & MySQL', d: 'Build dynamic, database-driven websites and full-stack applications with real-world projects.', ic: '#2563EB', ib: '#EFF6FF', svg: '<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>', m: [{ h: 'Module 1 — Intro to PHP', l: ['Server-Side Scripting Overview', 'XAMPP/WAMP Setup', 'PHP Syntax & Variables', 'Control Structures & Loops', 'Functions in PHP'] }, { h: 'Module 2 — Forms', l: ['Creating & Handling HTML Forms', 'GET and POST Methods', 'Validating User Input', 'Uploading Files with PHP'] }, { h: 'Module 3 — MySQL', l: ['Database Basics', 'Creating & Managing Databases', 'Tables, Rows & Columns', 'SQL: SELECT, INSERT, UPDATE, DELETE'] }, { h: 'Module 4 — PHP & MySQL', l: ['Connecting PHP to MySQL', 'Executing SQL Queries', 'Fetching & Displaying Data', 'SQL Injection Prevention'] }, { h: 'Module 5 — Sessions', l: ['Cookies & Sessions', 'Login & Logout Functionality', 'User Authentication', 'Access Control & Permissions'] }, { h: 'Module 6 — Advanced PHP', l: ['Working with APIs', 'File Handling Functions', 'Regular Expressions', 'Sending Emails with PHP'] }, { h: 'Module 7 — Final Project', l: ['Building a Dynamic Website', 'User Management System', 'CRUD Operations', 'Deploying the Website'] }] },
-      'python': { t: 'Python Programming', d: 'From syntax basics to real-world apps — data analysis, web development, automation and more.', ic: '#059669', ib: '#ECFDF5', svg: '<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>', m: [{ h: 'Module 1 — Intro to Python', l: ['Overview & Applications', 'Setting Up Python', 'Writing & Running Scripts', 'Python Syntax Basics'] }, { h: 'Module 2 — Python Basics', l: ['Variables & Data Types', 'Control Flow (if-else, loops)', 'Functions & Modular Programming', 'Handling Errors & Exceptions'] }, { h: 'Module 3 — Data Structures', l: ['Lists, Tuples & Sets', 'Dictionaries & Applications', 'Comprehensions', 'Working with Strings'] }, { h: 'Module 4 — OOP', l: ['Classes & Objects', 'Inheritance & Polymorphism', 'Encapsulation & Abstraction', 'Special Methods & Overloading'] }, { h: 'Module 5 — File Handling', l: ['Reading & Writing Files', 'CSV & JSON Files', 'File Operations', 'Context Managers'] }, { h: 'Module 6 — Advanced', l: ['Modules & Packages', 'Decorators & Generators', 'Date & Time', 'Regular Expressions'] }, { h: 'Module 7 — Libraries', l: ['NumPy & Pandas', 'Matplotlib Visualization', 'Flask & Django Intro', 'Working with APIs'] }, { h: 'Module 8 — Final Project', l: ['Python Application Build', 'Integrating Libraries & APIs', 'Testing & Debugging', 'Project Deployment'] }] },
-      'java': { t: 'Java Programming', d: 'Master Java from fundamentals to advanced OOP — build real-world console and GUI applications.', ic: '#2563EB', ib: '#EFF6FF', svg: '<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>', m: [{ h: 'Module 1 — Java Basics', l: ['Java Setup & IDE', 'Variables, Data Types & Operators', 'Control Flow Statements', 'Input & Output in Java'] }, { h: 'Module 2 — OOP Fundamentals', l: ['Classes & Objects', 'Constructors & Methods', 'Encapsulation', 'Inheritance & Polymorphism'] }, { h: 'Module 3 — Advanced OOP', l: ['Abstract Classes & Interfaces', 'Exception Handling', 'Packages & Libraries', 'Static & Final Keywords'] }, { h: 'Module 4 — Data Structures', l: ['Arrays & ArrayList', 'LinkedList & Stack', 'Queue & HashMap', 'Sorting & Searching'] }, { h: 'Module 5 — File & IO', l: ['Reading & Writing Files', 'Serialization', 'Working with Streams'] }, { h: 'Module 6 — Final Project', l: ['Java Application Build', 'GUI Basics with JavaFX', 'Testing & Debugging', 'Project Presentation'] }] },
-      'android': { t: 'Android App Development', d: 'Design, code and publish real Android applications — from UI wireframes to the Google Play Store.', ic: '#2563EB', ib: '#EFF6FF', svg: '<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>', m: [{ h: 'Module 1 — Android Intro', l: ['Android Architecture Overview', 'Setting Up Android Studio', 'First App: Hello World', 'Android Project Structure'] }, { h: 'Module 2 — UI Design', l: ['LinearLayout & ConstraintLayout', 'Buttons, TextViews & EditTexts', 'Material Design Principles', 'Multiple Screen Sizes'] }, { h: 'Module 3 — Activities & Navigation', l: ['Activity Lifecycle', 'Intents & Data Passing', 'Fragments & Navigation Component'] }, { h: 'Module 4 — Data & Storage', l: ['SharedPreferences', 'SQLite Database', 'Room Database', 'File Storage'] }, { h: 'Module 5 — APIs & Networking', l: ['REST APIs with Retrofit', 'Parsing JSON Data', 'Glide for Image Loading', 'Authentication Basics'] }, { h: 'Module 6 — Final Project', l: ['Full App Build', 'Publishing to Play Store', 'Testing on Real Devices'] }] },
-      'graphics': { t: 'Graphics Design / UI·UX', d: 'Develop a professional eye for design — branding, layout, UI prototyping and visual communication.', ic: '#EA580C', ib: '#FFF7ED', svg: '<svg style="stroke:#EA580C;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>', m: [{ h: 'Module 1 — Design Fundamentals', l: ['Principles of Design', 'Color Theory & Palettes', 'Typography Basics', 'Introduction to Branding'] }, { h: 'Module 2 — Canva Mastery', l: ['Canva Interface & Tools', 'Social Media Graphics', 'Posters, Flyers & Presentations', 'Brand Kits & Templates'] }, { h: 'Module 3 — Figma for UI', l: ['Figma Interface & Components', 'Frames, Layers & Auto Layout', 'Wireframes', 'Prototyping & Interactions'] }, { h: 'Module 4 — UI Design', l: ['UI Design Principles', 'Designing Mobile App Screens', 'Web Interface Design', 'Design Systems & Style Guides'] }, { h: 'Module 5 — UX Design', l: ['UX vs UI Difference', 'User Research & Personas', 'User Journey Mapping', 'Usability Testing Basics'] }, { h: 'Module 6 — Final Project', l: ['Complete Brand Identity Package', 'UI Design for Mobile App', 'Portfolio Presentation'] }] },
-      'algebra1': { t: 'Algebra I', d: 'Build a strong algebra foundation — from variables and linear equations to quadratics and radical expressions.', ic: '#059669', ib: '#ECFDF5', svg: '<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>', m: [{ h: 'Module 1 — Foundations', l: ['Variables & Expressions', 'The Coordinate Plane', 'Evaluating Expressions', 'Order of Operations (PEMDAS)'] }, { h: 'Module 2 — Linear Equations', l: ['One-Step Equations', 'Multi-Step Equations', 'Variables on Both Sides', 'Real-World Applications'] }, { h: 'Module 3 — Inequalities', l: ['One-Step & Multi-Step Inequalities', 'Graphing on Number Line', 'Compound Inequalities'] }, { h: 'Module 4 — Functions', l: ['Functions & Relations', 'Domain & Range', 'Graphing Functions', 'Slope-Intercept Form'] }, { h: 'Module 5 — Systems', l: ['Solving by Graphing', 'Substitution Method', 'Elimination Method'] }, { h: 'Module 6 — Polynomials', l: ['Understanding Polynomials', 'Adding & Multiplying', 'Factoring Polynomials'] }, { h: 'Module 7 — Quadratics & Radicals', l: ['Solving Quadratic Equations', 'Square Roots & Cube Roots', 'Solving Radical Equations'] }, { h: 'Module 8 — Assessment', l: ['Review of Key Concepts', 'Practice Problems', 'Final Skills Test'] }] },
-      'algebra2': { t: 'Algebra II', d: 'Advance your algebra — quadratic functions, logarithms, exponential functions, sequences and series.', ic: '#059669', ib: '#ECFDF5', svg: '<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="19" x2="20" y2="19"/><polyline points="4 15 8 9 12 13 16 5 20 15"/></svg>', m: [{ h: 'Module 1 — Linear Functions', l: ['Slope-Intercept & Standard Form', 'Graphing Linear Functions'] }, { h: 'Module 2 — Systems & Inequalities', l: ['Graphing, Substitution, Elimination', 'Linear & Systems of Inequalities'] }, { h: 'Module 3 — Quadratic Functions', l: ['Understanding & Graphing', 'Factoring, Completing the Square', 'Quadratic Formula', 'Applications'] }, { h: 'Module 4 — Polynomials', l: ['Operations on Polynomials', 'Factoring', 'Rational Root Theorem', 'Synthetic Division'] }, { h: 'Module 5 — Rational & Radical', l: ['Simplifying Rational Expressions', 'Rational Exponents', 'Solving Radical Equations'] }, { h: 'Module 6 — Exponential & Log', l: ['Exponential Functions & Graphs', 'Logarithmic Properties', 'Solving Exp & Log Equations'] }, { h: 'Module 7 — Rational Functions', l: ['Graphing Rational Functions', 'Asymptotes & Intercepts'] }, { h: 'Module 8 — Sequences & Review', l: ['Arithmetic & Geometric Sequences', 'nth Term', 'Final Skills Test'] }] },
-      'math': { t: 'Mathematics Grades 1–10', d: 'A complete math journey from basic addition all the way to advanced algebra and geometry.', ic: '#059669', ib: '#ECFDF5', svg: '<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>', m: [{ h: 'Grade 1–2 — Basics', l: ['Addition & Subtraction within 1000', 'Place Value', 'Length, Time & Money', 'Shapes & Symmetry', 'Intro to Multiplication & Division'] }, { h: 'Grade 3–4 — Core Skills', l: ['Multiplication & Division (to 100)', 'Fractions: Understanding & Ops', 'Area, Perimeter & Measurement', 'Multi-digit Multiplication', 'Decimals & Place Value'] }, { h: 'Grade 5–6 — Intermediate', l: ['Multiplying & Dividing Decimals', 'Adding & Subtracting Fractions', 'Volume & Surface Area', 'Ratios, Rates & Percentages'] }, { h: 'Grade 7 — Pre-Algebra', l: ['Proportions & Percentages', 'Equations & Inequalities', 'Operations with Integers', 'Probability & Statistics'] }, { h: 'Grade 8 — Algebra & Data', l: ['Exponents & Scientific Notation', 'Rational & Irrational Numbers', 'Pythagorean Theorem', 'Data Analysis & Probability'] }, { h: 'Grade 9 — Algebra 1', l: ['Linear Equations & Inequalities', 'Functions & Graphing', 'Polynomials & Factoring', 'Quadratic Equations'] }, { h: 'Grade 10 — Algebra 2', l: ['Solving Quadratic Equations', 'Polynomials & Rational Functions', 'Radical Expressions'] }] },
-      'writing': { t: 'Story & Research Writing', d: 'Develop confident, expressive writers — from creative storytelling to academic research papers.', ic: '#DC2626', ib: '#FEF2F2', svg: '<svg style="stroke:#DC2626;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>', m: [{ h: 'Story Writing — Module 1', l: ['Elements of a Story', 'Types of Narrative Writing', 'Point of View & Voice', 'Using Descriptive Language'] }, { h: 'Story Writing — Module 2', l: ['Story Starters & Brainstorming', 'Building Character Arcs', 'Dialogue & Show-Don\'t-Tell', 'Editing & Revising'] }, { h: 'Story Writing — Module 3', l: ['Genre: Fantasy, Mystery, Adventure', 'Short Story Workshop', 'Peer Review & Feedback', 'Final Story Portfolio'] }, { h: 'Research Writing — Module 1', l: ['What is Academic Writing?', 'Finding Reliable Sources', 'Note-Taking & Summarizing', 'Avoiding Plagiarism'] }, { h: 'Research Writing — Module 2', l: ['Thesis Statements', 'Essay Structure', 'In-Text Citations', 'MLA & APA Formatting'] }, { h: 'Research Writing — Module 3', l: ['Writing the Research Paper', 'Argument & Evidence', 'Revision Strategies', 'Final Paper Submission'] }] }
-    };
-
-    function openM(id) {
-      const c = C[id]; if (!c) return;
-      const i = document.getElementById('mIcon');
-      i.innerHTML = c.svg; i.style.background = c.ib; i.style.border = '1px solid ' + c.ic + '44';
-      document.getElementById('mTitle').textContent = c.t;
-      document.getElementById('mDesc').textContent = c.d;
-      document.getElementById('mMods').innerHTML = c.m.map(m => `<div class="mmod"><h4>${m.h}</h4><ul>${m.l.map(x => `<li>${x}</li>`).join('')}</ul></div>`).join('');
-      document.getElementById('mOverlay').classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeM() { document.getElementById('mOverlay').classList.remove('open'); document.body.style.overflow = ''; }
-    function closeMOut(e) { if (e.target === document.getElementById('mOverlay')) closeM(); }
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+    const C={'web-design':{t:'Web Designing',d:'Master the art of web design — from zero to building complete, responsive, professional websites.',ic:'#2563EB',ib:'#EFF6FF',svg:'<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',m:[{h:'Module 1 — Intro',l:['Overview of Web Designing','Web Technologies & Tools','Understanding UX and UI','Basics of Web Graphics']},{h:'Module 2 — HTML',l:['HTML Structure & Syntax','Common Tags: Headings, Lists, Links','HTML5 Semantic Elements','Forms & Input Types','Audio & Video Integration']},{h:'Module 3 — CSS',l:['Selectors, Properties & Values','Box Model: Margins, Borders, Padding','Flexbox and Grid Layouts','Responsive Design & Media Queries','CSS Animations & Transitions']},{h:'Module 4 — JavaScript',l:['Variables, Data Types & Operators','Functions and Events','DOM Manipulation','Basic Form Validations']},{h:'Module 5 — Tools',l:['VS Code & Sublime Text','Bootstrap Framework','Figma & Canva']},{h:'Module 6 — Responsive Design',l:['Principles of Responsive Design','Designing for All Screen Sizes','Testing & Debugging']},{h:'Module 7 — Hosting',l:['Domain Names & Hosting','Introduction to FTP','GitHub Pages Deployment']},{h:'Module 8 — Capstone Project',l:['Complete Website Build','Home, About, Services, Contact','Forms, Media & Responsiveness']}]},'web-dev':{t:'Web Development — PHP & MySQL',d:'Build dynamic, database-driven websites and full-stack applications with real-world projects.',ic:'#2563EB',ib:'#EFF6FF',svg:'<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',m:[{h:'Module 1 — Intro to PHP',l:['Server-Side Scripting Overview','XAMPP/WAMP Setup','PHP Syntax & Variables','Control Structures & Loops','Functions in PHP']},{h:'Module 2 — Forms',l:['Creating & Handling HTML Forms','GET and POST Methods','Validating User Input','Uploading Files with PHP']},{h:'Module 3 — MySQL',l:['Database Basics','Creating & Managing Databases','Tables, Rows & Columns','SQL: SELECT, INSERT, UPDATE, DELETE']},{h:'Module 4 — PHP & MySQL',l:['Connecting PHP to MySQL','Executing SQL Queries','Fetching & Displaying Data','SQL Injection Prevention']},{h:'Module 5 — Sessions',l:['Cookies & Sessions','Login & Logout Functionality','User Authentication','Access Control & Permissions']},{h:'Module 6 — Advanced PHP',l:['Working with APIs','File Handling Functions','Regular Expressions','Sending Emails with PHP']},{h:'Module 7 — Final Project',l:['Building a Dynamic Website','User Management System','CRUD Operations','Deploying the Website']}]},'python':{t:'Python Programming',d:'From syntax basics to real-world apps — data analysis, web development, automation and more.',ic:'#059669',ib:'#ECFDF5',svg:'<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>',m:[{h:'Module 1 — Intro to Python',l:['Overview & Applications','Setting Up Python','Writing & Running Scripts','Python Syntax Basics']},{h:'Module 2 — Python Basics',l:['Variables & Data Types','Control Flow (if-else, loops)','Functions & Modular Programming','Handling Errors & Exceptions']},{h:'Module 3 — Data Structures',l:['Lists, Tuples & Sets','Dictionaries & Applications','Comprehensions','Working with Strings']},{h:'Module 4 — OOP',l:['Classes & Objects','Inheritance & Polymorphism','Encapsulation & Abstraction','Special Methods & Overloading']},{h:'Module 5 — File Handling',l:['Reading & Writing Files','CSV & JSON Files','File Operations','Context Managers']},{h:'Module 6 — Advanced',l:['Modules & Packages','Decorators & Generators','Date & Time','Regular Expressions']},{h:'Module 7 — Libraries',l:['NumPy & Pandas','Matplotlib Visualization','Flask & Django Intro','Working with APIs']},{h:'Module 8 — Final Project',l:['Python Application Build','Integrating Libraries & APIs','Testing & Debugging','Project Deployment']}]},'java':{t:'Java Programming',d:'Master Java from fundamentals to advanced OOP — build real-world console and GUI applications.',ic:'#2563EB',ib:'#EFF6FF',svg:'<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',m:[{h:'Module 1 — Java Basics',l:['Java Setup & IDE','Variables, Data Types & Operators','Control Flow Statements','Input & Output in Java']},{h:'Module 2 — OOP Fundamentals',l:['Classes & Objects','Constructors & Methods','Encapsulation','Inheritance & Polymorphism']},{h:'Module 3 — Advanced OOP',l:['Abstract Classes & Interfaces','Exception Handling','Packages & Libraries','Static & Final Keywords']},{h:'Module 4 — Data Structures',l:['Arrays & ArrayList','LinkedList & Stack','Queue & HashMap','Sorting & Searching']},{h:'Module 5 — File & IO',l:['Reading & Writing Files','Serialization','Working with Streams']},{h:'Module 6 — Final Project',l:['Java Application Build','GUI Basics with JavaFX','Testing & Debugging','Project Presentation']}]},'android':{t:'Android App Development',d:'Design, code and publish real Android applications — from UI wireframes to the Google Play Store.',ic:'#2563EB',ib:'#EFF6FF',svg:'<svg style="stroke:#2563EB;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>',m:[{h:'Module 1 — Android Intro',l:['Android Architecture Overview','Setting Up Android Studio','First App: Hello World','Android Project Structure']},{h:'Module 2 — UI Design',l:['LinearLayout & ConstraintLayout','Buttons, TextViews & EditTexts','Material Design Principles','Multiple Screen Sizes']},{h:'Module 3 — Activities & Navigation',l:['Activity Lifecycle','Intents & Data Passing','Fragments & Navigation Component']},{h:'Module 4 — Data & Storage',l:['SharedPreferences','SQLite Database','Room Database','File Storage']},{h:'Module 5 — APIs & Networking',l:['REST APIs with Retrofit','Parsing JSON Data','Glide for Image Loading','Authentication Basics']},{h:'Module 6 — Final Project',l:['Full App Build','Publishing to Play Store','Testing on Real Devices']}]},'graphics':{t:'Graphics Design / UI·UX',d:'Develop a professional eye for design — branding, layout, UI prototyping and visual communication.',ic:'#EA580C',ib:'#FFF7ED',svg:'<svg style="stroke:#EA580C;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',m:[{h:'Module 1 — Design Fundamentals',l:['Principles of Design','Color Theory & Palettes','Typography Basics','Introduction to Branding']},{h:'Module 2 — Canva Mastery',l:['Canva Interface & Tools','Social Media Graphics','Posters, Flyers & Presentations','Brand Kits & Templates']},{h:'Module 3 — Figma for UI',l:['Figma Interface & Components','Frames, Layers & Auto Layout','Wireframes','Prototyping & Interactions']},{h:'Module 4 — UI Design',l:['UI Design Principles','Designing Mobile App Screens','Web Interface Design','Design Systems & Style Guides']},{h:'Module 5 — UX Design',l:['UX vs UI Difference','User Research & Personas','User Journey Mapping','Usability Testing Basics']},{h:'Module 6 — Final Project',l:['Complete Brand Identity Package','UI Design for Mobile App','Portfolio Presentation']}]},'algebra1':{t:'Algebra I',d:'Build a strong algebra foundation — from variables and linear equations to quadratics and radical expressions.',ic:'#059669',ib:'#ECFDF5',svg:'<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>',m:[{h:'Module 1 — Foundations',l:['Variables & Expressions','The Coordinate Plane','Evaluating Expressions','Order of Operations (PEMDAS)']},{h:'Module 2 — Linear Equations',l:['One-Step Equations','Multi-Step Equations','Variables on Both Sides','Real-World Applications']},{h:'Module 3 — Inequalities',l:['One-Step & Multi-Step Inequalities','Graphing on Number Line','Compound Inequalities']},{h:'Module 4 — Functions',l:['Functions & Relations','Domain & Range','Graphing Functions','Slope-Intercept Form']},{h:'Module 5 — Systems',l:['Solving by Graphing','Substitution Method','Elimination Method']},{h:'Module 6 — Polynomials',l:['Understanding Polynomials','Adding & Multiplying','Factoring Polynomials']},{h:'Module 7 — Quadratics & Radicals',l:['Solving Quadratic Equations','Square Roots & Cube Roots','Solving Radical Equations']},{h:'Module 8 — Assessment',l:['Review of Key Concepts','Practice Problems','Final Skills Test']}]},'algebra2':{t:'Algebra II',d:'Advance your algebra — quadratic functions, logarithms, exponential functions, sequences and series.',ic:'#059669',ib:'#ECFDF5',svg:'<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="19" x2="20" y2="19"/><polyline points="4 15 8 9 12 13 16 5 20 15"/></svg>',m:[{h:'Module 1 — Linear Functions',l:['Slope-Intercept & Standard Form','Graphing Linear Functions']},{h:'Module 2 — Systems & Inequalities',l:['Graphing, Substitution, Elimination','Linear & Systems of Inequalities']},{h:'Module 3 — Quadratic Functions',l:['Understanding & Graphing','Factoring, Completing the Square','Quadratic Formula','Applications']},{h:'Module 4 — Polynomials',l:['Operations on Polynomials','Factoring','Rational Root Theorem','Synthetic Division']},{h:'Module 5 — Rational & Radical',l:['Simplifying Rational Expressions','Rational Exponents','Solving Radical Equations']},{h:'Module 6 — Exponential & Log',l:['Exponential Functions & Graphs','Logarithmic Properties','Solving Exp & Log Equations']},{h:'Module 7 — Rational Functions',l:['Graphing Rational Functions','Asymptotes & Intercepts']},{h:'Module 8 — Sequences & Review',l:['Arithmetic & Geometric Sequences','nth Term','Final Skills Test']}]},'math':{t:'Mathematics Grades 1–10',d:'A complete math journey from basic addition all the way to advanced algebra and geometry.',ic:'#059669',ib:'#ECFDF5',svg:'<svg style="stroke:#059669;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',m:[{h:'Grade 1–2 — Basics',l:['Addition & Subtraction within 1000','Place Value','Length, Time & Money','Shapes & Symmetry','Intro to Multiplication & Division']},{h:'Grade 3–4 — Core Skills',l:['Multiplication & Division (to 100)','Fractions: Understanding & Ops','Area, Perimeter & Measurement','Multi-digit Multiplication','Decimals & Place Value']},{h:'Grade 5–6 — Intermediate',l:['Multiplying & Dividing Decimals','Adding & Subtracting Fractions','Volume & Surface Area','Ratios, Rates & Percentages']},{h:'Grade 7 — Pre-Algebra',l:['Proportions & Percentages','Equations & Inequalities','Operations with Integers','Probability & Statistics']},{h:'Grade 8 — Algebra & Data',l:['Exponents & Scientific Notation','Rational & Irrational Numbers','Pythagorean Theorem','Data Analysis & Probability']},{h:'Grade 9 — Algebra 1',l:['Linear Equations & Inequalities','Functions & Graphing','Polynomials & Factoring','Quadratic Equations']},{h:'Grade 10 — Algebra 2',l:['Solving Quadratic Equations','Polynomials & Rational Functions','Radical Expressions']}]},'writing':{t:'Story & Research Writing',d:'Develop confident, expressive writers — from creative storytelling to academic research papers.',ic:'#DC2626',ib:'#FEF2F2',svg:'<svg style="stroke:#DC2626;" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',m:[{h:'Story Writing — Module 1',l:['Elements of a Story','Types of Narrative Writing','Point of View & Voice','Using Descriptive Language']},{h:'Story Writing — Module 2',l:['Story Starters & Brainstorming','Building Character Arcs',"Dialogue & Show-Don't-Tell",'Editing & Revising']},{h:'Story Writing — Module 3',l:['Genre: Fantasy, Mystery, Adventure','Short Story Workshop','Peer Review & Feedback','Final Story Portfolio']},{h:'Research Writing — Module 1',l:['What is Academic Writing?','Finding Reliable Sources','Note-Taking & Summarizing','Avoiding Plagiarism']},{h:'Research Writing — Module 2',l:['Thesis Statements','Essay Structure','In-Text Citations','MLA & APA Formatting']},{h:'Research Writing — Module 3',l:['Writing the Research Paper','Argument & Evidence','Revision Strategies','Final Paper Submission']}]}};
+    function openM(id){const c=C[id];if(!c)return;const i=document.getElementById('mIcon');i.innerHTML=c.svg;i.style.background=c.ib;i.style.border='1px solid '+c.ic+'44';document.getElementById('mTitle').textContent=c.t;document.getElementById('mDesc').textContent=c.d;document.getElementById('mMods').innerHTML=c.m.map(m=>`<div class="mmod"><h4>${m.h}</h4><ul>${m.l.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');document.getElementById('mOverlay').classList.add('open');document.body.style.overflow='hidden';}
+    function closeM(){document.getElementById('mOverlay').classList.remove('open');document.body.style.overflow='';}
+    function closeMOut(e){if(e.target===document.getElementById('mOverlay'))closeM();}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM();});
   </script>
 </body>
-
 </html>
